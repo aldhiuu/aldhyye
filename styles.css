@@ -1,0 +1,271 @@
+/* Gaya Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+  
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+  position: fixed; /* Mengatur posisi navbar menjadi fixed */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  left: 0; /* Menempatkan navbar di sisi kiri */
+  width: 100%; /* Mengatur lebar navbar agar memenuhi layar */
+  z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+}
+
+.dropdown-menu {
+  background-color: rgba(76, 118, 173, 0.9); /* Warna latar belakang dropdown dengan transparansi */
+}
+
+.dropdown-item {
+  color: white; /* Warna teks item dropdown */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 86, 179, 0.9); /* Warna latar belakang saat hover dengan transparansi */
+}
+
+/* Tambahkan aturan untuk keadaan aktif dan fokus */
+.dropdown-item:focus, .dropdown-item:active {
+  background-color: rgba(0, 86, 179, 0.9); /* Warna latar belakang saat item dropdown aktif */
+}
+
+body {
+  padding-top: 70px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
+/* Gaya untuk Logo */
+.logo {
+    height: 40px; /* Atur tinggi logo */
+    margin-right: 10px; /* Jarak antara logo dan teks */
+}
+
+.carousel-item img {
+  height: 650px; /* Atur tinggi gambar slider sesuai kebutuhan */
+  object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+.carousel-item {
+  position: relative; /* Agar overlay dapat diposisikan dengan benar */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan transparansi 50% */
+  z-index: 1; /* Pastikan overlay berada di atas gambar */
+}
+
+.carousel-caption {
+  position: relative; /* Agar caption berada di atas overlay */
+  z-index: 2; /* Pastikan caption berada di atas overlay */
+}
+
+.carousel-caption {
+  position: absolute; /* Mengatur posisi caption */
+  top: 50%; /* Menempatkan caption di tengah vertikal */
+  left: 50%; /* Menempatkan caption di tengah horizontal */
+  transform: translate(-50%, -50%); /* Menggeser caption agar benar-benar berada di tengah */
+  text-align: center; /* Mengatur teks agar berada di tengah */
+  color: white; /* Mengatur warna teks */
+}
+
+.carousel-caption h1 {
+  font-size: 3rem; /* Ukuran font untuk judul */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan untuk teks */
+}
+
+.carousel-caption p {
+  font-size: 1.5rem; /* Ukuran font untuk deskripsi */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Bayangan untuk teks */
+}
+
+.menu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu li {
+  position: relative; /* Untuk dropdown */
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Menu */
+.submenu {
+  display: none; /* Sembunyikan submenu */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  color: white;
+}
+
+.dropdown:hover .submenu {
+  display: block; /* Tampilkan submenu saat hover */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk Berita Terbaru */
+#berita-terbaru {
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 20px; /* Padding untuk bagian berita */
+}
+
+.card {
+  border: 1px solid #dee2e6; /* Border untuk card */
+  border-radius: 0.25rem; /* Sudut membulat untuk card */
+  transition: transform 0.2s; /* Efek transisi saat hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membesarkan card saat hover */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font untuk judul card */
+}
+
+.card-text {
+  font-size: 1rem; /* Ukuran font untuk teks card */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Warna latar belakang tombol */
+  border-color: #007bff; /* Warna border tombol */
+}
+
+/* Aturan untuk gambar dalam card */
+.card-img-top {
+  height: 200px; /* Atur tinggi gambar */
+  object-fit: cover; /* Menjaga proporsi gambar dan memotong jika perlu */
+  width: 100%; /* Pastikan gambar memenuhi lebar card */
+}
+
+#partnership {
+  background-color: #f8f9fa; /* Warna latar belakang untuk section partnership */
+  padding: 20px 0; /* Padding untuk bagian partnership */
+}
+
+#partnership img {
+  transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+#partnership img:hover {
+  transform: scale(1.1); /* Membesarkan logo saat hover */
+}
+
+.partnership-link {
+  text-decoration: none; /* Menghapus garis bawah */
+  color: inherit; /* Menggunakan warna teks yang sama dengan elemen di sekitarnya */
+}
+
+
+
+.partnership {
+  padding: 60px 0; /* Pastikan bagian partnership juga memiliki padding */
+}
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  margin-bottom: 60px; /* Menambahkan jarak bawah */
+}
+
+.embed-responsive {
+  border-radius: 15px; 
+  overflow: hidden; /* Menghindari overflow pada iframe */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk peta */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 30px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #007BFF
+}
+  
+footer {
+    background-color: #222;
+    color: #ccc;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Desain Responsif */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+}

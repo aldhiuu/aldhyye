@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Agama - SMA 1 Sumilir</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS Anda -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Warna latar belakang */
+        }
+        .header-section {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .header-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content-section {
+            background-color: white; /* Warna latar belakang untuk konten */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .content-section p {
+            font-size: 1.2rem;
+        }
+        .content-section ul {
+            list-style-type: none; /* Menghilangkan bullet point */
+            padding-left: 0; /* Menghilangkan padding kiri */
+        }
+        .content-section ul li {
+            margin-bottom: 10px; /* Jarak antar item */
+        }
+        .icon {
+            font-size: 1.5rem; /* Ukuran ikon */
+            margin-right: 10px; /* Jarak antara ikon dan teks */
+            color: #4caf50; /* Warna ikon */
+        }
+        .footer {
+            background-color: #222; /* Warna latar belakang footer */
+            color: #ccc; /* Warna teks footer */
+            padding: 10px 0; /* Padding atas dan bawah */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .program-image {
+            max-width: 100%; /* Memastikan gambar responsif */
+            height: auto; /* Memastikan proporsi gambar tetap terjaga */
+            border-radius: 10px; /* Sudut membulat untuk gambar */
+            margin-bottom: 20px; /* Jarak bawah gambar */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigasi -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo SekolahKu" class="logo">
+            SMA 1 SUMILIR
+        </a>            
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTentang" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tentang Kami
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownTentang">
+                        <li><a class="dropdown-item" href="sambutan.html">Sambutan Kepala Sekolah</a></li>
+
+                        <li><a class="dropdown-item" href="visimisi.html">Visi & Misi</a></li>
+                        <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProgram" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Program
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownProgram">
+                        <li><a class="dropdown-item" href="ipa.html">IPA</a></li>
+                        <li><a class="dropdown-item" href="ips.html">IPS</a></li>
+                        <li><a class="dropdown-item active" href="agama.html">AGAMA</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href ="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<section class="header-section">
+    <div class="container">
+        <h1>Program Agama</h1>
+    </div>
+</section>
+
+<!-- Content Section -->
+<div class="container content-section">
+    <h2>Deskripsi Program Agama</h2>
+    <p>Program Agama di SMA 1 Sumilir bertujuan untuk membentuk karakter siswa melalui pemahaman yang mendalam tentang nilai-nilai agama. Kami berkomitmen untuk mendidik siswa agar menjadi individu yang berakhlak mulia dan memiliki keimanan yang kuat.</p>
+    
+    <h2>Mata Pelajaran yang Ditawarkan</h2>
+    <ul>
+        <li><i class="icon bi bi-book"></i>Pendidikan Agama Islam</li>
+        <li><i class="icon bi bi-book"></i>Pendidikan Agama Kristen</li>
+        <li><i class="icon bi bi-book"></i>Pendidikan Agama Hindu</li>
+        <li><i class="icon bi bi-book"></i>Pendidikan Agama Budha</li>
+        <li><i class="icon bi bi-book"></i>Pendidikan Kewarganegaraan</li>
+    </ul>
+
+    <h2>Kegiatan Ekstrakurikuler</h2>
+    <p>Untuk mendukung pembelajaran di luar kelas, kami juga menawarkan berbagai kegiatan ekstrakurikuler, antara lain:</p>
+    <ul>
+        <li><i class="icon bi bi-people"></i>Pengajian Rutin</li>
+        <li><i class="icon bi bi-people"></i>Klub Rohani</li>
+        <li><i class="icon bi bi-trophy"></i>Kompetisi Agama</li>
+        <li><i class="icon bi bi-gear"></i>Workshop Nilai-Nilai Agama</li>
+    </ul>
+
+    <h2>Informasi Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan lebih lanjut mengenai program Agama, silakan hubungi kami melalui:</p>
+    <ul>
+        <li><i class="icon bi bi-envelope"></i>Email: info@sma1sumilir.sch.id</li>
+        <li><i class="icon bi bi-telephone"></i>Telepon: (021) 123-4567</li>
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2024 SMA 1 Sumilir. Semua hak dilindungi.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> <!-- Link ke Bootstrap Icons -->
+</body>
+</html>
